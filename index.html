@@ -325,6 +325,59 @@
     .muted{color:var(--muted)}
     .sep{height:1px;background:var(--stroke2);margin:12px 0}
 
+    /* ===== Evolution Map ===== */
+    .evo{display:grid;gap:12px}
+    .evo-row{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+
+    .evo-node{
+      flex:1 1 210px; min-width:210px;
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.10);
+      border-radius:16px;
+      padding:12px 12px;
+      position:relative;
+      overflow:hidden;
+    }
+    .evo-node:before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(320px 180px at 20% 10%, rgba(47,128,237,.22), rgba(0,0,0,0) 60%),
+        radial-gradient(320px 180px at 80% 90%, rgba(47,230,214,.14), rgba(0,0,0,0) 55%);
+      opacity:.45;
+      pointer-events:none;
+    }
+    .evo-node .head{
+      position:relative;
+      display:flex;align-items:center;justify-content:space-between;gap:10px;
+    }
+    .evo-node .head strong{font-size:13px}
+    .evo-node .head small{font-family:var(--mono);font-size:11px;color:var(--muted)}
+    .evo-node p{
+      position:relative;
+      margin:8px 0 0;
+      color:rgba(234,240,255,.86);
+      font-size:12px;
+      line-height:1.6;
+    }
+    .evo-arrow{
+      flex:0 0 auto;
+      display:flex;align-items:center;justify-content:center;
+      padding:0 2px;
+      color:rgba(234,240,255,.45);
+      font-size:18px;
+      user-select:none;
+    }
+    @media (max-width:980px){ .evo-arrow{display:none;} }
+
+    .evo-node.active{
+      border-color: rgba(47,128,237,.55);
+      box-shadow: 0 12px 28px rgba(47,128,237,.14);
+    }
+    .evo-node.active .badge{
+      border-color: rgba(47,230,214,.45);
+    }
+
   </style>
 </head>
 <body class="grain">
@@ -339,6 +392,7 @@
       </div>
       <nav class="nav">
         <a class="pill" href="#principles">第一性原理</a>
+        <a class="pill" href="#evolution">认知进化图</a>
         <a class="pill" href="#stages">阶段物候</a>
         <a class="pill" href="#pcr">PCR 校准</a>
         <a class="pill" href="#playbook">校准清单</a>
@@ -358,6 +412,100 @@
         </div>
       </div>
     </div>
+
+    <!-- ===== NEW: Evolution Map ===== -->
+    <section id="evolution" class="grid">
+      <div class="card hard">
+        <div class="hd">
+          <div>
+            <h2>《从实践论到 PCR：创业者的认知进化图》</h2>
+            <p>把“想明白”改成“打明白”：实践 → 样本 → 结构 → 流水线 → 规模。</p>
+          </div>
+          <span class="tag cyan"><i></i>Map</span>
+        </div>
+        <div class="bd">
+          <div class="evo">
+            <div class="evo-row">
+              <div class="evo-node" data-evo="practice">
+                <div class="head">
+                  <strong>① 实践（感性）</strong>
+                  <span class="badge">密度</span>
+                </div>
+                <p>先跑市场再谈结论：面谈、对比、现场证据。没有行动，就没有认识。</p>
+              </div>
+
+              <div class="evo-arrow">→</div>
+
+              <div class="evo-node" data-evo="sample">
+                <div class="head">
+                  <strong>② 样本（调查）</strong>
+                  <span class="badge">20家</span>
+                </div>
+                <p>把“我觉得”换成“统计”：焦虑比例、投流比例、升级意愿、决策周期。</p>
+              </div>
+
+              <div class="evo-arrow">→</div>
+
+              <div class="evo-node" data-evo="structure">
+                <div class="head">
+                  <strong>③ 结构（理性）</strong>
+                  <span class="badge">规律</span>
+                </div>
+                <p>把零散现象抽成可复用模块：损失测算公式、话术、异议处理、交付模板。</p>
+              </div>
+
+              <div class="evo-arrow">→</div>
+
+              <div class="evo-node" data-evo="pcr">
+                <div class="head">
+                  <strong>④ PCR（流水线）</strong>
+                  <span class="badge">可预测</span>
+                </div>
+                <p>记录并优化：触达→面谈→报价→成交。让结果从“偶然”变成“必然”。</p>
+              </div>
+
+              <div class="evo-arrow">→</div>
+
+              <div class="evo-node" data-evo="scale">
+                <div class="head">
+                  <strong>⑤ 规模（复制）</strong>
+                  <span class="badge">扩张</span>
+                </div>
+                <p>有了 PCR 才谈复制：从一个赛道到相邻赛道，从天津到下一城。</p>
+              </div>
+            </div>
+
+            <div class="sep"></div>
+
+            <div class="item">
+              <div class="t"><strong>用法</strong><small>写作/销售/组织三用</small></div>
+              <p>每周更新只回答三件事：①我在哪个阶段？②本周只校准一个关键假设是什么？③PCR 是否改善（改善=方法有效，不改善=假设错误）。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="hd">
+          <div>
+            <h2>你现在在哪一格？</h2>
+            <p>把“阶段判断”写成公开记录：对团队是节奏，对客户是信任，对资本是可预测性。</p>
+          </div>
+          <span class="tag magenta"><i></i>Now</span>
+        </div>
+        <div class="bd">
+          <div class="quote">
+            没有调查，没有发言权。
+            <div class="who">— 反对本本主义 · 创业者改写版：没有20家样本，不谈结构</div>
+          </div>
+          <div class="sep"></div>
+          <div class="item">
+            <div class="t"><strong>建议当前落点</strong><small>你刚上线</small></div>
+            <p>把主战场放在：实践密度 + 样本统计；先打穿 1 单 2.5 万，再谈规模复制。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="principles" class="grid">
       <div class="card hard">
@@ -659,9 +807,28 @@
       pcrValue.textContent = s.pcr.toFixed(1) + '%';
     }
 
+    // ======= NEW: Evolution Highlight (stage -> evo) =======
+    function evoKeyFromStage(stageId){
+      if(stageId === 'validate') return 'sample';     // 验证期：实践+样本
+      if(stageId === 'chasm') return 'structure';     // 鸿沟期：补齐整体产品=结构化
+      if(stageId === 'predictable') return 'pcr';     // 可预测增长：PCR
+      if(stageId === 'scale') return 'scale';         // 扩张：复制
+      if(stageId === 'mature') return 'scale';        // 稳态：仍以复制/组织为主
+      return 'practice';
+    }
+
+    function renderEvolutionHighlight(){
+      const s = STAGES[active];
+      const key = evoKeyFromStage(s.id);
+      document.querySelectorAll('.evo-node').forEach(n => {
+        n.classList.toggle('active', n.dataset.evo === key);
+      });
+    }
+
     function renderAll(){
       renderStages();
       renderMeters();
+      renderEvolutionHighlight();
     }
 
     // initial render
