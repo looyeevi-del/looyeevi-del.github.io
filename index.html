@@ -44,7 +44,6 @@
     }
 
     a{color:inherit}
-
     .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 70px}
 
     /* subtle animated grain */
@@ -64,24 +63,17 @@
       padding:10px 0 22px;
     }
 
-    .brand{
-      display:flex; align-items:center; gap:12px;
-    }
-
+    .brand{display:flex; align-items:center; gap:12px}
     .logo{
       width:42px; height:42px; border-radius:14px;
       background: linear-gradient(135deg, var(--wave-blue) 0%, var(--aqua-cyan) 45%, var(--deep-purple) 80%, var(--signal-magenta) 100%);
       box-shadow: 0 10px 26px rgba(47,128,237,.22);
       border:1px solid rgba(255,255,255,.10);
     }
-
     .brand h1{margin:0;font-size:15px;letter-spacing:.3px}
     .brand p{margin:2px 0 0;color:var(--muted);font-size:12px}
 
-    .nav{
-      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
-    }
-
+    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
     .pill{
       font-size:12px;
       padding:10px 12px;
@@ -106,25 +98,14 @@
       box-shadow: var(--shadow);
       overflow:hidden;
     }
-
     .hero-inner{padding:26px 22px 22px; display:grid; gap:14px}
-
-    .kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      font-size:12px; color:var(--muted);
-    }
-
+    .kicker{display:inline-flex; align-items:center; gap:10px; font-size:12px; color:var(--muted)}
     .dot{
       width:10px; height:10px; border-radius:999px;
       background: var(--signal-magenta);
       box-shadow: 0 0 0 5px rgba(226,76,139,.12);
     }
-
-    .title{
-      font-size:28px; line-height:1.18; margin:0;
-      letter-spacing:.2px;
-    }
-
+    .title{font-size:28px; line-height:1.18; margin:0; letter-spacing:.2px}
     .subtitle{
       margin:0;
       color:rgba(234,240,255,.86);
@@ -132,11 +113,7 @@
       font-size:14px;
       line-height:1.65;
     }
-
-    .hero-actions{
-      display:flex; gap:10px; flex-wrap:wrap;
-      margin-top:6px;
-    }
+    .hero-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px}
 
     .btn{
       border:1px solid var(--stroke);
@@ -167,17 +144,13 @@
 
     /* sections */
     section{margin-top:18px}
-
     .grid{
       display:grid;
       grid-template-columns: 1.1fr .9fr;
       gap:14px;
       margin-top:14px;
     }
-
-    @media (max-width: 980px){
-      .grid{grid-template-columns:1fr}
-    }
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
 
     .card{
       border:1px solid var(--stroke);
@@ -186,7 +159,6 @@
       box-shadow: var(--shadow2);
       overflow:hidden;
     }
-
     .card.hard{
       background: linear-gradient(180deg, rgba(17,28,49,.92), rgba(11,20,38,.92));
     }
@@ -196,21 +168,17 @@
       border-bottom:1px solid var(--stroke2);
       display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
     }
-
     .card .hd h2{margin:0;font-size:14px;letter-spacing:.2px}
     .card .hd p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.55}
-
     .card .bd{padding:14px 16px 16px}
 
     .list{display:grid; gap:10px}
-
     .item{
       padding:12px 12px;
       border-radius:14px;
       border:1px solid var(--stroke);
       background: rgba(0,0,0,.10);
     }
-
     .item .t{display:flex;align-items:center;justify-content:space-between;gap:10px}
     .item strong{font-size:13px}
     .item small{color:var(--muted);font-family:var(--mono);font-size:11px}
@@ -224,7 +192,6 @@
       border:1px solid rgba(255,255,255,.12);
       background: rgba(0,0,0,.12);
     }
-
     .tag i{width:8px;height:8px;border-radius:999px;display:inline-block}
     .tag.blue i{background:var(--wave-blue)}
     .tag.cyan i{background:var(--aqua-cyan)}
@@ -232,10 +199,7 @@
     .tag.magenta i{background:var(--signal-magenta)}
 
     /* stage selector */
-    .stage-bar{
-      display:flex; gap:10px; flex-wrap:wrap;
-    }
-
+    .stage-bar{display:flex; gap:10px; flex-wrap:wrap}
     .stage{
       cursor:pointer;
       border:1px solid var(--stroke);
@@ -246,7 +210,6 @@
       font-size:12px;
       display:inline-flex; align-items:center; gap:10px;
     }
-
     .stage .s-dot{width:9px;height:9px;border-radius:999px;background:rgba(255,255,255,.22)}
     .stage.active{border-color:rgba(47,128,237,.55); box-shadow: 0 10px 26px rgba(47,128,237,.12)}
     .stage.active .s-dot{background: var(--aqua-cyan); box-shadow: 0 0 0 5px rgba(47,230,214,.12)}
@@ -281,7 +244,6 @@
       -webkit-background-clip:text; background-clip:text; color:transparent;
     }
     .pcr .hint{color:var(--muted); font-size:12px; line-height:1.55}
-
     .kbd{
       font-family:var(--mono);
       font-size:11px;
@@ -333,32 +295,13 @@
       opacity:.45;
       pointer-events:none;
     }
-    .evo-node .head{
-      position:relative;
-      display:flex;align-items:center;justify-content:space-between;gap:10px;
-    }
+    .evo-node .head{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px}
     .evo-node .head strong{font-size:13px}
-    .evo-node p{
-      position:relative;
-      margin:8px 0 0;
-      color:rgba(234,240,255,.86);
-      font-size:12px;
-      line-height:1.6;
-    }
-    .evo-arrow{
-      flex:0 0 auto;
-      display:flex;align-items:center;justify-content:center;
-      padding:0 2px;
-      color:rgba(234,240,255,.45);
-      font-size:18px;
-      user-select:none;
-    }
+    .evo-node p{position:relative;margin:8px 0 0;color:rgba(234,240,255,.86);font-size:12px;line-height:1.6}
+    .evo-arrow{flex:0 0 auto;display:flex;align-items:center;justify-content:center;padding:0 2px;color:rgba(234,240,255,.45);font-size:18px;user-select:none}
     @media (max-width:980px){ .evo-arrow{display:none;} }
-    .evo-node.active{
-      border-color: rgba(47,128,237,.55);
-      box-shadow: 0 12px 28px rgba(47,128,237,.14);
-    }
-    .evo-node.active .badge{border-color: rgba(47,230,214,.45);}
+    .evo-node.active{border-color: rgba(47,128,237,.55);box-shadow: 0 12px 28px rgba(47,128,237,.14)}
+    .evo-node.active .badge{border-color: rgba(47,230,214,.45)}
 
     /* ===== Field Log ===== */
     .filters{display:flex;gap:10px;flex-wrap:wrap}
@@ -386,9 +329,7 @@
       border-radius:16px;
       padding:12px;
     }
-    .log .top{
-      display:flex;align-items:flex-start;justify-content:space-between;gap:10px;
-    }
+    .log .top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
     .log .top strong{font-size:13px}
     .log .meta{
       color:var(--muted);
@@ -414,18 +355,67 @@
     .pill2.neu i{background: rgba(255,255,255,.25)}
 
     .log p{margin:8px 0 0;color:rgba(234,240,255,.86);font-size:12px;line-height:1.6}
-    .log .kvs{margin-top:10px;display:grid;gap:8px}
-    .kv{
-      border:1px solid var(--stroke);
-      background: rgba(0,0,0,.10);
-      border-radius:14px;
-      padding:10px 10px;
-    }
+
+    .kvs{margin-top:10px;display:grid;gap:8px}
+    .kv{border:1px solid var(--stroke);background: rgba(0,0,0,.10);border-radius:14px;padding:10px 10px}
     .kv .k{font-family:var(--mono);font-size:11px;color:var(--muted)}
     .kv .v{margin-top:6px;font-size:12px;color:rgba(234,240,255,.90);line-height:1.6}
 
+    .thumbs{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .thumb{
+      width:74px;height:74px;border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.10);
+      overflow:hidden;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+    }
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:.95}
+    .thumb:hover{border-color:rgba(47,128,237,.45); transform: translateY(-1px);}
+
+    /* ===== Weekly Summary & Funnel ===== */
+    .stats{
+      display:grid;
+      gap:10px;
+    }
+    .stat-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+    }
+    @media (max-width:980px){
+      .stat-grid{grid-template-columns:1fr}
+    }
+    .metric{
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.10);
+      border-radius:16px;
+      padding:12px;
+    }
+    .metric .k{color:var(--muted);font-family:var(--mono);font-size:11px}
+    .metric .v{
+      margin-top:8px;
+      font-size:26px;
+      font-weight:800;
+      letter-spacing:.2px;
+      background: linear-gradient(135deg, var(--wave-blue) 0%, var(--aqua-cyan) 55%, rgba(234,240,255,.92) 100%);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .metric .s{margin-top:6px;color:rgba(234,240,255,.82);font-size:12px;line-height:1.6}
+    .funnel{
+      display:grid;
+      gap:10px;
+    }
+    .f-row{display:flex;align-items:center;gap:10px}
+    .f-row .name{width:78px;color:var(--muted);font-size:12px}
+    .f-row .track{flex:1;height:10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);overflow:hidden}
+    .f-row .fill{height:100%;border-radius:999px;background:linear-gradient(135deg, var(--wave-blue), var(--aqua-cyan), var(--deep-purple))}
+    .f-row .val{width:70px;text-align:right;font-family:var(--mono);font-size:11px;color:rgba(234,240,255,.86)}
   </style>
 </head>
+
 <body class="grain">
   <div class="wrap">
     <header>
@@ -448,7 +438,7 @@
 
     <div class="hero" id="top">
       <div class="hero-inner">
-        <div class="kicker"><span class="dot"></span><span>Calibration System · 公开写作 · 可持续迭代</span><span class="badge">v0.2</span></div>
+        <div class="kicker"><span class="dot"></span><span>Calibration System · 公开写作 · 可持续迭代</span><span class="badge">v0.3</span></div>
         <h2 class="title">把创业写成一套<strong>可校准</strong>的系统：每一步都有阶段、指标、校准点</h2>
         <p class="subtitle">
           我将持续追加真实实践材料，保留“正确/错误”的痕迹：每个结论都可追溯、可复盘、可复制。
@@ -474,30 +464,15 @@
         <div class="bd">
           <div class="evo">
             <div class="evo-row">
-              <div class="evo-node" data-evo="practice">
-                <div class="head"><strong>① 实践（感性）</strong><span class="badge">密度</span></div>
-                <p>先跑市场再谈结论：面谈、对比、现场证据。没有行动，就没有认识。</p>
-              </div>
+              <div class="evo-node" data-evo="practice"><div class="head"><strong>① 实践（感性）</strong><span class="badge">密度</span></div><p>先跑市场再谈结论：面谈、对比、现场证据。没有行动，就没有认识。</p></div>
               <div class="evo-arrow">→</div>
-              <div class="evo-node" data-evo="sample">
-                <div class="head"><strong>② 样本（调查）</strong><span class="badge">20家</span></div>
-                <p>把“我觉得”换成“统计”：焦虑比例、投流比例、升级意愿、决策周期。</p>
-              </div>
+              <div class="evo-node" data-evo="sample"><div class="head"><strong>② 样本（调查）</strong><span class="badge">20家</span></div><p>把“我觉得”换成“统计”：焦虑比例、投流比例、升级意愿、决策周期。</p></div>
               <div class="evo-arrow">→</div>
-              <div class="evo-node" data-evo="structure">
-                <div class="head"><strong>③ 结构（理性）</strong><span class="badge">规律</span></div>
-                <p>把零散现象抽成可复用模块：损失测算公式、话术、异议处理、交付模板。</p>
-              </div>
+              <div class="evo-node" data-evo="structure"><div class="head"><strong>③ 结构（理性）</strong><span class="badge">规律</span></div><p>把零散现象抽成可复用模块：损失测算公式、话术、异议处理、交付模板。</p></div>
               <div class="evo-arrow">→</div>
-              <div class="evo-node" data-evo="pcr">
-                <div class="head"><strong>④ PCR（流水线）</strong><span class="badge">可预测</span></div>
-                <p>记录并优化：触达→面谈→报价→成交。让结果从“偶然”变成“必然”。</p>
-              </div>
+              <div class="evo-node" data-evo="pcr"><div class="head"><strong>④ PCR（流水线）</strong><span class="badge">可预测</span></div><p>记录并优化：触达→面谈→报价→成交。让结果从“偶然”变成“必然”。</p></div>
               <div class="evo-arrow">→</div>
-              <div class="evo-node" data-evo="scale">
-                <div class="head"><strong>⑤ 规模（复制）</strong><span class="badge">扩张</span></div>
-                <p>有了 PCR 才谈复制：从一个赛道到相邻赛道，从天津到下一城。</p>
-              </div>
+              <div class="evo-node" data-evo="scale"><div class="head"><strong>⑤ 规模（复制）</strong><span class="badge">扩张</span></div><p>有了 PCR 才谈复制：从一个赛道到相邻赛道，从天津到下一城。</p></div>
             </div>
 
             <div class="sep"></div>
@@ -543,26 +518,11 @@
         </div>
         <div class="bd">
           <div class="list">
-            <div class="item">
-              <div class="t"><strong>市场不是行业，是会互相参考的一群人</strong><small>Self-referencing Market</small></div>
-              <p>如果客户之间不能互相参考、互相转述、互相验证，你就没有口碑网络，也就没有主流市场。</p>
-            </div>
-            <div class="item">
-              <div class="t"><strong>B2B 不是卖产品，是规模化解决问题的能力</strong><small>Repeatable Problem-Solving</small></div>
-              <p>产品只是载体。真正交付的是：可复制的“问题解决逻辑”+ 可证明的价值。</p>
-            </div>
-            <div class="item">
-              <div class="t"><strong>没有可被引用的成功，就没有主流市场</strong><small>Reference Base</small></div>
-              <p>主流买家不买“梦想”，他们买确定性；确定性来自可被引用的成功。</p>
-            </div>
-            <div class="item">
-              <div class="t"><strong>偶然成功是毒药，可预测性才是解药</strong><small>Predictability</small></div>
-              <p>任何一次“爆了”都必须被拆解成可复制流程，否则只会造成幻觉与误判。</p>
-            </div>
-            <div class="item">
-              <div class="t"><strong>组织能力是最终护城河</strong><small>Pioneers → Settlers</small></div>
-              <p>早期靠开拓者赢一次；进入主流靠定居者把“赢”变成日常。</p>
-            </div>
+            <div class="item"><div class="t"><strong>市场不是行业，是会互相参考的一群人</strong><small>Self-referencing Market</small></div><p>如果客户之间不能互相参考、互相转述、互相验证，你就没有口碑网络，也就没有主流市场。</p></div>
+            <div class="item"><div class="t"><strong>B2B 不是卖产品，是规模化解决问题的能力</strong><small>Repeatable Problem-Solving</small></div><p>产品只是载体。真正交付的是：可复制的“问题解决逻辑”+ 可证明的价值。</p></div>
+            <div class="item"><div class="t"><strong>没有可被引用的成功，就没有主流市场</strong><small>Reference Base</small></div><p>主流买家不买“梦想”，他们买确定性；确定性来自可被引用的成功。</p></div>
+            <div class="item"><div class="t"><strong>偶然成功是毒药，可预测性才是解药</strong><small>Predictability</small></div><p>任何一次“爆了”都必须被拆解成可复制流程，否则只会造成幻觉与误判。</p></div>
+            <div class="item"><div class="t"><strong>组织能力是最终护城河</strong><small>Pioneers → Settlers</small></div><p>早期靠开拓者赢一次；进入主流靠定居者把“赢”变成日常。</p></div>
           </div>
         </div>
       </div>
@@ -576,21 +536,13 @@
           <span class="tag magenta"><i></i>Signal</span>
         </div>
         <div class="bd">
-          <div class="quote">创业不是寻找机会，是设计确定性。
-            <div class="who">— 一浪 · 总定义</div>
-          </div>
+          <div class="quote">创业不是寻找机会，是设计确定性。<div class="who">— 一浪 · 总定义</div></div>
           <div class="sep"></div>
-          <div class="quote">定位不是自我介绍，是竞争关系设计。
-            <div class="who">— 竞争引擎锚点</div>
-          </div>
+          <div class="quote">定位不是自我介绍，是竞争关系设计。<div class="who">— 竞争引擎锚点</div></div>
           <div class="sep"></div>
-          <div class="quote">流水线创建率决定未来 12 个月。
-            <div class="who">— PCR 校准锚点</div>
-          </div>
+          <div class="quote">流水线创建率决定未来 12 个月。<div class="who">— PCR 校准锚点</div></div>
           <div class="sep"></div>
-          <div class="quote">不补齐，就不成交；不成交，就没有口碑。
-            <div class="who">— Whole Product 锚点</div>
-          </div>
+          <div class="quote">不补齐，就不成交；不成交，就没有口碑。<div class="who">— Whole Product 锚点</div></div>
         </div>
       </div>
     </section>
@@ -637,13 +589,13 @@
       </div>
     </section>
 
-    <!-- ===== NEW: Field Log ===== -->
+    <!-- ===== Field Log + Summary/Funnel ===== -->
     <section id="fieldlog" class="grid">
       <div class="card hard">
         <div class="hd">
           <div>
             <h2>实战记录（Field Log）</h2>
-            <p>这里记录真实假设、动作、结果与证据，保留“正确/错误”的痕迹：每一条都能复盘，才能形成 PCR。</p>
+            <p>记录真实假设、动作、结果与证据，保留“正确/错误”的痕迹：每一条都能复盘，才能形成 PCR。</p>
           </div>
           <span class="tag magenta"><i></i>Trace</span>
         </div>
@@ -657,23 +609,47 @@
       <div class="card">
         <div class="hd">
           <div>
-            <h2>怎么新增一条记录？</h2>
-            <p>你只需要改代码里的 <span class="kbd">LOGS</span> 数组，新增一条对象即可。</p>
+            <h2>本周物候 · PCR 漏斗</h2>
+            <p>从真实记录自动汇总：近 7 天触达→面谈→报价→成交，并显示关键转化率。</p>
           </div>
-          <span class="tag blue"><i></i>How</span>
+          <span class="tag cyan"><i></i>Pulse</span>
         </div>
         <div class="bd">
-          <div class="item">
-            <div class="t"><strong>字段说明</strong><small>最小可用</small></div>
-            <p>
-              date / market / hypothesis / action / result / evidence / verdict（ok/bad）<br>
-              你可以把证据放截图链接、Notion 链接、或一句“可复述的事实”。
-            </p>
+          <div class="stats">
+            <div class="stat-grid">
+              <div class="metric">
+                <div class="k">本周面谈（7d）</div>
+                <div class="v" id="mMeetings">—</div>
+                <div class="s" id="mMeetingsHint">—</div>
+              </div>
+              <div class="metric">
+                <div class="k">2.5万验证进度（7d）</div>
+                <div class="v" id="m25">—</div>
+                <div class="s" id="m25Hint">—</div>
+              </div>
+            </div>
+
+            <div class="sep"></div>
+
+            <div class="item">
+              <div class="t"><strong>本周一句话判断</strong><small>Weekly Thesis</small></div>
+              <p id="weeklyThesis" class="muted" style="margin-top:10px">—</p>
+            </div>
+
+            <div class="sep"></div>
+
+            <div class="funnel" id="funnelBox"></div>
           </div>
+
           <div class="sep"></div>
-          <div class="quote">
-            真相等于金钱：pipeline 真实，增长才可预测。
-            <div class="who">— 一浪 · 记录观</div>
+
+          <div class="item">
+            <div class="t"><strong>怎么让统计生效？</strong><small>只改LOGS</small></div>
+            <p>
+              在 <span class="kbd">LOGS</span> 每条里填 <span class="kbd">metrics</span>：<br>
+              <span class="kbd">touch</span>（触达数）、<span class="kbd">meeting</span>（面谈数）、<span class="kbd">quote</span>（报价数）、<span class="kbd">win</span>（成交数）、<span class="kbd">deal25</span>（2.5万相关：0/1）。<br>
+              也可填 <span class="kbd">evidence_images</span> 放截图链接数组。
+            </p>
           </div>
         </div>
       </div>
@@ -690,22 +666,10 @@
         </div>
         <div class="bd">
           <div class="list">
-            <div class="item">
-              <div class="t"><strong>栏目 1：阶段诊断</strong><small>Stage</small></div>
-              <p>我现在处于：利基验证 / 鸿沟期 / 可预测增长 / 扩张 / 稳态。判断证据是什么？（引用指标 + 真实现象）</p>
-            </div>
-            <div class="item">
-              <div class="t"><strong>栏目 2：本周校准问题</strong><small>Calibration Question</small></div>
-              <p>例如：我是在卖“酷”还是在卖“钱”？我有 Whole Product 吗？我是否多线作战？</p>
-            </div>
-            <div class="item">
-              <div class="t"><strong>栏目 3：动作与证据</strong><small>Action → Proof</small></div>
-              <p>写清楚：做了什么动作、用什么证据验证、得到什么结果、下一步修正什么。</p>
-            </div>
-            <div class="item">
-              <div class="t"><strong>栏目 4：金句锚点</strong><small>One-liner</small></div>
-              <p>每篇只放 1–2 条金句，作为你的“判断签名”。</p>
-            </div>
+            <div class="item"><div class="t"><strong>栏目 1：阶段诊断</strong><small>Stage</small></div><p>我现在处于：利基验证 / 鸿沟期 / 可预测增长 / 扩张 / 稳态。判断证据是什么？（引用指标 + 真实现象）</p></div>
+            <div class="item"><div class="t"><strong>栏目 2：本周校准问题</strong><small>Calibration Question</small></div><p>例如：我是在卖“酷”还是在卖“钱”？我有 Whole Product 吗？我是否多线作战？</p></div>
+            <div class="item"><div class="t"><strong>栏目 3：动作与证据</strong><small>Action → Proof</small></div><p>写清楚：做了什么动作、用什么证据验证、得到什么结果、下一步修正什么。</p></div>
+            <div class="item"><div class="t"><strong>栏目 4：金句锚点</strong><small>One-liner</small></div><p>每篇只放 1–2 条金句，作为你的“判断签名”。</p></div>
           </div>
         </div>
       </div>
@@ -724,9 +688,7 @@
             <p class="muted" style="margin-top:10px">①你处在哪个阶段？②你现在最大的不确定性是什么？③你希望我用哪一个校准问题帮你拆？④你愿意提供哪些证据/数据？</p>
           </div>
           <div class="sep"></div>
-          <div class="quote">写作不是表达观点，而是公开校准。
-            <div class="who">— 一浪 · 写作观</div>
-          </div>
+          <div class="quote">写作不是表达观点，而是公开校准。<div class="who">— 一浪 · 写作观</div></div>
         </div>
       </div>
     </section>
@@ -738,78 +700,72 @@
   </div>
 
   <script>
-    // ======= Stage Model (you can edit freely) =======
+    // ======= Stage Model =======
     const STAGES = [
-      {
-        id: 'validate',
-        name: '利基验证期',
-        pcr: 0.0,
-        briefTitle: '目标：验证必需品 + 拿到可被引用的成功苗子',
-        brief: '核心动作：20 次访谈 + 10 个非关联付费客户 + 电梯测试通过。避免：做大、做全、做广。',
-        focus: { market: 75, product: 90, sales: 35, price: 25, org: 25 }
+      { id:'validate', name:'利基验证期', pcr:0.0,
+        briefTitle:'目标：验证必需品 + 拿到可被引用的成功苗子',
+        brief:'核心动作：20 次访谈 + 10 个非关联付费客户 + 电梯测试通过。避免：做大、做全、做广。',
+        focus:{ market:75, product:90, sales:35, price:25, org:25 }
       },
-      {
-        id: 'chasm',
-        name: '鸿沟期',
-        pcr: 3.0,
-        briefTitle: '目标：补齐整体产品 + 建立参考基座',
-        brief: '核心动作：单一滩头阵地聚焦；100% 交付 Whole Product；形成实用主义者可引用的案例。',
-        focus: { market: 85, product: 80, sales: 50, price: 40, org: 40 }
+      { id:'chasm', name:'鸿沟期', pcr:3.0,
+        briefTitle:'目标：补齐整体产品 + 建立参考基座',
+        brief:'核心动作：单一滩头阵地聚焦；100% 交付 Whole Product；形成实用主义者可引用的案例。',
+        focus:{ market:85, product:80, sales:50, price:40, org:40 }
       },
-      {
-        id: 'predictable',
-        name: '可预测增长期',
-        pcr: 9.0,
-        briefTitle: '目标：建立可预测流水线（PCR 成为温度计）',
-        brief: '核心动作：Seeds/Nets/Spears 三路并行；销售分工；每月 PCR 8%–10% 连续增长。',
-        focus: { market: 60, product: 60, sales: 90, price: 55, org: 55 }
+      { id:'predictable', name:'可预测增长期', pcr:9.0,
+        briefTitle:'目标：建立可预测流水线（PCR 成为温度计）',
+        brief:'核心动作：Seeds/Nets/Spears 三路并行；销售分工；每月 PCR 8%–10% 连续增长。',
+        focus:{ market:60, product:60, sales:90, price:55, org:55 }
       },
-      {
-        id: 'scale',
-        name: '规模扩张期',
-        pcr: 8.0,
-        briefTitle: '目标：组织化复制 + 阶段匹配领导力',
-        brief: '核心动作：正确的销售领导（阶段匹配）；培训系统化；流失率下降；开始追求负流失。',
-        focus: { market: 55, product: 55, sales: 75, price: 80, org: 85 }
+      { id:'scale', name:'规模扩张期', pcr:8.0,
+        briefTitle:'目标：组织化复制 + 阶段匹配领导力',
+        brief:'核心动作：正确的销售领导（阶段匹配）；培训系统化；流失率下降；开始追求负流失。',
+        focus:{ market:55, product:55, sales:75, price:80, org:85 }
       },
-      {
-        id: 'mature',
-        name: '稳态优化期',
-        pcr: 6.0,
-        briefTitle: '目标：阶梯模型 + 稳定现金流 + 风险免疫',
-        brief: '核心动作：标准化插件；真相等于金钱（pipeline 真实）；组织免疫力；持续迭代。',
-        focus: { market: 45, product: 50, sales: 60, price: 65, org: 90 }
+      { id:'mature', name:'稳态优化期', pcr:6.0,
+        briefTitle:'目标：阶梯模型 + 稳定现金流 + 风险免疫',
+        brief:'核心动作：标准化插件；真相等于金钱（pipeline 真实）；组织免疫力；持续迭代。',
+        focus:{ market:45, product:50, sales:60, price:65, org:90 }
       }
     ];
 
     const ENGINE_LABELS = [
-      { key: 'market', name: '市场引擎' },
-      { key: 'product', name: '产品引擎' },
-      { key: 'sales', name: '销售引擎' },
-      { key: 'price', name: '价格引擎' },
-      { key: 'org', name: '组织引擎' }
+      { key:'market', name:'市场引擎' },
+      { key:'product', name:'产品引擎' },
+      { key:'sales', name:'销售引擎' },
+      { key:'price', name:'价格引擎' },
+      { key:'org', name:'组织引擎' }
     ];
 
     // ======= Field Logs (Edit here) =======
     // verdict: 'ok' | 'bad' | 'neu'
+    // metrics: { touch, meeting, quote, win, deal25 }
     const LOGS = [
       {
-        date: '2026-02-24',
-        market: '天津 · 专升本',
-        hypothesis: '用“行业AI推荐透明度调研”作为入口，比直接销售更容易获得决策人面谈。',
-        action: '用统一话术触达20个机构负责人，邀请15分钟访谈；面谈时现场问AI并展示对比。',
-        result: '预约率明显高于直接推销（仍需用真实数据补齐）。',
-        evidence: '待补：触达数/回复数/面谈数（建议每晚更新一次）。',
-        verdict: 'neu'
+        date:'2026-02-24',
+        market:'天津 · 专升本',
+        stage:'validate',
+        hypothesis:'用“行业AI推荐透明度调研”作为入口，比直接销售更容易获得决策人面谈。',
+        action:'统一话术触达机构负责人，邀请15分钟访谈；面谈现场问AI并展示对比。',
+        result:'观察中：预约率提高，但需要用数据闭环。',
+        evidence:'待补：触达/回复/面谈/二次会谈数字。',
+        evidence_images:[],
+        verdict:'neu',
+        metrics:{ touch:20, meeting:2, quote:0, win:0, deal25:0 },
+        next:'把触达提升到每天30；把面谈固定到每周≥8；筛3个进入二次会谈。'
       },
       {
-        date: '2026-02-24',
-        market: '定价验证',
-        hypothesis: '第一单 2.5 万更可能来自 5400 升级池，而不是纯冷启动。',
-        action: '对已成交5400客户做一次“损失测算+升级对赌”二次沟通（计划）。',
-        result: '待验证。',
-        evidence: '待补：是否进入二次会谈、是否提出预算、是否推进合同。',
-        verdict: 'neu'
+        date:'2026-02-24',
+        market:'定价验证',
+        stage:'validate',
+        hypothesis:'第一单 2.5 万更可能来自 5400 升级池，而不是纯冷启动。',
+        action:'对已成交客户做“损失测算+升级对赌”二次沟通（计划）。',
+        result:'待验证。',
+        evidence:'待补：是否进入二次会谈、是否提出预算、是否推进合同。',
+        evidence_images:[],
+        verdict:'neu',
+        metrics:{ touch:2, meeting:0, quote:0, win:0, deal25:0 },
+        next:'把升级脚本写成固定流程：证据→损失测算→样本名额→对赌条款。'
       }
     ];
 
@@ -821,6 +777,13 @@
 
     const logFilters = document.getElementById('logFilters');
     const logList = document.getElementById('logList');
+
+    const mMeetings = document.getElementById('mMeetings');
+    const mMeetingsHint = document.getElementById('mMeetingsHint');
+    const m25 = document.getElementById('m25');
+    const m25Hint = document.getElementById('m25Hint');
+    const weeklyThesis = document.getElementById('weeklyThesis');
+    const funnelBox = document.getElementById('funnelBox');
 
     let active = 0;
     let logFilter = 'all';
@@ -908,7 +871,6 @@
       if(stageId === 'mature') return 'scale';
       return 'practice';
     }
-
     function renderEvolutionHighlight(){
       const s = STAGES[active];
       const key = evoKeyFromStage(s.id);
@@ -942,6 +904,16 @@
       return `<span class="pill2 neu"><i></i>⏳ 观察中</span>`;
     }
 
+    function thumbsHtml(urls){
+      if(!urls || urls.length===0) return '';
+      const safe = urls.slice(0, 8);
+      return `
+        <div class="thumbs">
+          ${safe.map(u => `<a class="thumb" href="${u}" target="_blank" rel="noopener"><img src="${u}" alt="evidence"></a>`).join('')}
+        </div>
+      `;
+    }
+
     function renderLogs(){
       const items = LOGS
         .slice()
@@ -957,6 +929,19 @@
       items.forEach(x => {
         const div = document.createElement('div');
         div.className = 'log';
+
+        const m = x.metrics || {};
+        const metricsLine = (m.touch || m.meeting || m.quote || m.win) ? `
+          <div class="kvs" style="margin-top:10px">
+            <div class="kv">
+              <div class="k">METRICS</div>
+              <div class="v">
+                触达 ${m.touch||0} · 面谈 ${m.meeting||0} · 报价 ${m.quote||0} · 成交 ${m.win||0} · 2.5万 ${m.deal25||0}
+              </div>
+            </div>
+          </div>
+        ` : '';
+
         div.innerHTML = `
           <div class="top">
             <div>
@@ -967,9 +952,11 @@
             </div>
             <div class="meta">
               ${verdictPill(x.verdict)}
-              <span class="pill2 neu"><i></i>${(x.stage || 'Stage: —')}</span>
+              <span class="pill2 neu"><i></i>${(x.stage ? `Stage: ${x.stage}` : 'Stage: —')}</span>
             </div>
           </div>
+
+          ${metricsLine}
 
           <div class="kvs">
             <div class="kv"><div class="k">ACTION</div><div class="v">${x.action || '—'}</div></div>
@@ -977,8 +964,99 @@
             <div class="kv"><div class="k">EVIDENCE</div><div class="v">${x.evidence || '—'}</div></div>
             <div class="kv"><div class="k">NEXT</div><div class="v">${x.next || '—'}</div></div>
           </div>
+          ${thumbsHtml(x.evidence_images)}
         `;
         logList.appendChild(div);
+      });
+    }
+
+    // ======= Weekly Summary & Funnel (7d) =======
+    function parseDate(s){
+      // Expect YYYY-MM-DD
+      const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || '');
+      if(!m) return null;
+      const y = Number(m[1]), mo = Number(m[2])-1, d = Number(m[3]);
+      // Use local time
+      return new Date(y, mo, d, 12, 0, 0);
+    }
+
+    function daysAgo(n){
+      const now = new Date();
+      const d = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 12, 0, 0);
+      d.setDate(d.getDate() - n);
+      return d;
+    }
+
+    function inLastDays(dateStr, n){
+      const dt = parseDate(dateStr);
+      if(!dt) return false;
+      return dt >= daysAgo(n-1); // include today as day 0
+    }
+
+    function sumMetricsLast7d(){
+      const totals = { touch:0, meeting:0, quote:0, win:0, deal25:0 };
+      LOGS.forEach(x => {
+        if(inLastDays(x.date, 7)){
+          const m = x.metrics || {};
+          totals.touch += Number(m.touch || 0);
+          totals.meeting += Number(m.meeting || 0);
+          totals.quote += Number(m.quote || 0);
+          totals.win += Number(m.win || 0);
+          totals.deal25 += Number(m.deal25 || 0);
+        }
+      });
+      return totals;
+    }
+
+    function pct(num, den){
+      if(!den) return '—';
+      return Math.round((num/den)*100) + '%';
+    }
+
+    function renderFunnel(){
+      const t = sumMetricsLast7d();
+
+      // Summary numbers
+      mMeetings.textContent = String(t.meeting || 0);
+      mMeetingsHint.textContent = `触达 ${t.touch} · 报价 ${t.quote} · 成交 ${t.win}`;
+
+      m25.textContent = String(t.deal25 || 0);
+      m25Hint.textContent = `近7天与 2.5 万相关推进次数（0/1累加）`;
+
+      // Weekly thesis (simple heuristic)
+      // If meetings < 8: density problem; else if quote==0: offer/problem framing; else if win==0: closing/proof
+      let thesis = '';
+      if(t.meeting < 8){
+        thesis = `本周主问题：销售密度不足（面谈 < 8）。只做一件事：把触达提升到每天30，集中周二-周四面谈。`;
+      }else if(t.quote === 0){
+        thesis = `本周主问题：面谈转报价为 0。只校准一个点：把“调研”升级为“样本名额+行业位置”，强制进入报价讨论。`;
+      }else if(t.win === 0){
+        thesis = `本周主问题：报价转成交为 0。只校准一个点：证据闭环（截图/对比/损失测算）+ 对赌条款，让客户下注。`;
+      }else{
+        thesis = `本周信号：漏斗开始闭环（已有成交）。下一步：复盘触发点并复制同类型客户，形成可预测 PCR。`;
+      }
+      weeklyThesis.textContent = thesis;
+
+      // Funnel bars (relative widths)
+      const max = Math.max(1, t.touch, t.meeting, t.quote, t.win);
+      const rows = [
+        { name:'触达', val:t.touch, note:`—` },
+        { name:'面谈', val:t.meeting, note:`触达→面谈 ${pct(t.meeting, t.touch)}` },
+        { name:'报价', val:t.quote, note:`面谈→报价 ${pct(t.quote, t.meeting)}` },
+        { name:'成交', val:t.win, note:`报价→成交 ${pct(t.win, t.quote)}` },
+      ];
+
+      funnelBox.innerHTML = '';
+      rows.forEach(r => {
+        const div = document.createElement('div');
+        div.className = 'f-row';
+        const w = Math.max(2, Math.round((r.val / max) * 100));
+        div.innerHTML = `
+          <div class="name">${r.name}</div>
+          <div class="track"><div class="fill" style="width:${w}%"></div></div>
+          <div class="val">${r.val} · ${r.note}</div>
+        `;
+        funnelBox.appendChild(div);
       });
     }
 
@@ -988,6 +1066,96 @@
       renderEvolutionHighlight();
       renderLogFilters();
       renderLogs();
+      renderFunnel();
+    }
+
+    // ======= Stage Rendering =======
+    function renderStages(){
+      stageBar.innerHTML = '';
+      STAGES.forEach((s, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'stage' + (i===active ? ' active' : '');
+        btn.type = 'button';
+        btn.innerHTML = `<span class="s-dot" style="background:${i===active ? 'var(--aqua-cyan)' : stageDotColor(s.id)}"></span>${s.name}`;
+        btn.onclick = () => { active = i; renderAll(); };
+        stageBar.appendChild(btn);
+      });
+    }
+
+    function renderMeters(){
+      const s = STAGES[active];
+      engineMeter.innerHTML = '';
+
+      ENGINE_LABELS.forEach((e) => {
+        const val = s.focus[e.key];
+        const row = document.createElement('div');
+        row.className = 'bar';
+
+        const name = document.createElement('div');
+        name.className = 'name';
+        name.textContent = e.name;
+
+        const track = document.createElement('div');
+        track.className = 'track';
+
+        const fill = document.createElement('div');
+        fill.className = 'fill';
+        fill.style.width = Math.max(6, val) + '%';
+
+        let accent = 'linear-gradient(135deg, var(--wave-blue), var(--aqua-cyan), var(--deep-purple))';
+        if(e.key==='market') accent = 'linear-gradient(135deg, var(--aqua-cyan), rgba(47,230,214,.55), var(--wave-blue))';
+        if(e.key==='product') accent = 'linear-gradient(135deg, var(--deep-purple), rgba(106,63,191,.55), var(--aqua-cyan))';
+        if(e.key==='sales') accent = 'linear-gradient(135deg, var(--wave-blue), rgba(47,128,237,.65), var(--aqua-cyan))';
+        if(e.key==='price') accent = 'linear-gradient(135deg, var(--deep-purple), rgba(226,76,139,.35), var(--wave-blue))';
+        if(e.key==='org') accent = 'linear-gradient(135deg, var(--aqua-cyan), rgba(47,230,214,.55), var(--deep-purple))';
+        fill.style.background = accent;
+
+        track.appendChild(fill);
+
+        const v = document.createElement('div');
+        v.className = 'val';
+        v.textContent = val + '%';
+
+        row.appendChild(name);
+        row.appendChild(track);
+        row.appendChild(v);
+
+        engineMeter.appendChild(row);
+      });
+
+      stageBrief.innerHTML = `
+        <div class="t"><strong>${s.briefTitle}</strong><small>Stage ID: ${s.id}</small></div>
+        <p>${s.brief}</p>
+        <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+          <span class="tag blue"><i></i>主战场随阶段迁移</span>
+          <span class="tag magenta"><i></i>鸿沟期风险最高</span>
+          <span class="tag cyan"><i></i>PCR 是物候温度计</span>
+        </div>
+      `;
+
+      pcrValue.textContent = s.pcr.toFixed(1) + '%';
+    }
+
+    // ======= Evolution Highlight =======
+    function renderEvolutionHighlight(){
+      const s = STAGES[active];
+      const key = evoKeyFromStage(s.id);
+      document.querySelectorAll('.evo-node').forEach(n => {
+        n.classList.toggle('active', n.dataset.evo === key);
+      });
+    }
+
+    // ======= Filters =======
+    function renderLogFilters(){
+      logFilters.innerHTML = '';
+      FILTERS.forEach(f => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'filter' + (logFilter === f.id ? ' active' : '');
+        b.innerHTML = `<span class="s-dot" style="background:${logFilter === f.id ? 'var(--aqua-cyan)' : f.dot}"></span>${f.label}`;
+        b.onclick = () => { logFilter = f.id; renderLogs(); renderLogFilters(); };
+        logFilters.appendChild(b);
+      });
     }
 
     // initial render
